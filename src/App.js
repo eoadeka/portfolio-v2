@@ -5,20 +5,13 @@ import { FaMailBulk, FaGithub, FaPython, FaLinkedin, FaPhp , FaAws, FaDocker, Fa
 import { SiGnubash, SiKubernetes, SiGithubactions, SiTerraform, SiAnsible,SiChef, SiPrometheus, SiGrafana } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCubesStacked, FaHashnode, FaTwitter } from "react-icons/fa6";
+import { MdArrowOutward } from "react-icons/md";
 import Card from './components/Card';
 import data from './projectsData'
 // import Blogs from './Blogs';
 
 function App() {
-  // const [open, setOpen] = React.useState(false);
   const style = { fontSize: "2.5em", paddingRight: ".5em" };
-  // const style = { color: "black", fontSize: "1.5em" }
-
-  // const Modal = props => {
-  //   return (
-  //     <div className="overlay">{props.children}</div>
-  //   );
-  // };
 
   return (
     <div className="App">
@@ -42,11 +35,11 @@ function App() {
           <h2 style={{color: "#967bb6"}}>Emmanuella Adeka.</h2>
           <h2 style={{color: "#967bb6"}}>I automate interesting stuff.</h2>
           <br></br>
-          <p>I am a <b>DevOps Engineer</b> fascinated with automation and streamlining software delivery. 
+          <p>I am a <b style={{textDecoration: "underline", fontSize: "1.25em"}}>DevOps Engineer</b> fascinated with automation and streamlining infrastructure and software delivery. 
           <br></br>On a mission to bridge the gap between development and operations, one automation script at a time. 
           <br></br>I bring a unique blend of technical expertise, creativity, and a dash of humor to the world of DevOps.</p>
           <br></br>
-          <button className='filters-btn resume'>Resume</button> 
+          <a href='https://drive.google.com/file/d/1KN781KQF67WlG3q6cktjUNlMQUuZ_iYn/view?usp=sharing' target="_blank" rel="noreferrer"><button type='link' className='filters-btn resume'>Resume</button></a>
           <h1 className='bottom-of-the-barrel'>./intro</h1>
         </div>
 
@@ -157,8 +150,8 @@ function App() {
 
         <div id='blogs' className='section'>
           <h1>articles</h1>
-          <p>I mostly write at: <a href='https://hashnode.com/@ellaadeka' style={{textDecoration:"underline"}} target="_blank" rel="noreferrer">hashnode</a></p>
-          <p>I subsequently write at: <a href='https://dev.to/ella-adeka' style={{textDecoration:"underline"}} target="_blank" rel="noreferrer">dev.to</a></p>
+          <p>I mostly write at: <a href='https://hashnode.com/@ellaadeka' style={{textDecoration:"underline"}} target="_blank" rel="noreferrer">hashnode <MdArrowOutward  /></a></p>
+          <p>I subsequently write at: <a href='https://dev.to/ella-adeka' style={{textDecoration:"underline"}} target="_blank" rel="noreferrer">dev.to <MdArrowOutward  /></a></p>
           <br></br>
           <h3>Here are a few of my most recent articles:</h3>
           <HasnodeArticles />
@@ -168,11 +161,11 @@ function App() {
 
         <div id='contact' className='section'>
           <h1>get in contact</h1>
-          <p className='contact-list skill'><span><FaMailBulk style={style} /></span> <span> <a href='mailto:eoadeka@gmail.com'>eoadeka@gmail.com</a></span></p>
-          <p className='contact-list skill'><span><FaGithub style={style} /></span> <span> <a href='https://github.com/ella-adeka/'>github.com/ella-adeka</a></span></p>
-          <p className='contact-list skill'><span><FaHashnode style={style} /> </span> <span> <a href='https://hashnode.com/@ellaadeka'>hashnode.com@ellaadeka</a></span></p>
-          <p className='contact-list skill'><span><FaLinkedin style={style} /></span> <span> <a href='https://www.linkedin.com/in/emmanuella-onyowo-adeka/'>Emmanuella Onyowo Adeka</a></span></p>
-          <p className='contact-list skill'><span><FaTwitter style={style} /></span> <span><a href='https://twitter.com/a_deque_a'>Ella Adeka</a></span></p>
+          <p className='contact-list skill'><span><FaMailBulk style={style} /></span> <span> <a href='mailto:eoadeka@gmail.com' target="_blank" rel="noreferrer">eoadeka@gmail.com <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaGithub style={style} /></span> <span> <a href='https://github.com/ella-adeka/' target="_blank" rel="noreferrer">github.com/ella-adeka <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaHashnode style={style} /> </span> <span> <a href='https://hashnode.com/@ellaadeka' target="_blank" rel="noreferrer">hashnode.com@ellaadeka <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaLinkedin style={style} /></span> <span> <a href='https://www.linkedin.com/in/emmanuella-onyowo-adeka/' target="_blank" rel="noreferrer">Emmanuella Onyowo Adeka <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaTwitter style={style} /></span> <span><a href='https://twitter.com/a_deque_a' target="_blank" rel="noreferrer">Ella Adeka <MdArrowOutward  /></a></span></p>
           <h1 className='bottom-of-the-barrel'>./contact</h1>
         </div>
       </main>
