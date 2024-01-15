@@ -213,6 +213,10 @@ button {
   cursor: pointer;
 }
 
+.card:hover .coming-soon-overlay {
+  opacity: 1;
+}
+
 .card h3{
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -338,4 +342,33 @@ img{
   vertical-align: middle;
 }
 
+.project-pict{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.project-image{
+  display: block;
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+.coming-soon-overlay {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  background: rgb(249, 247, 247);
+  /* background: rgba(252, 252, 252, 0.5); Black see-through  */
+  width: 40%;
+  transition: .5s ease;
+  /* opacity:0; */
+  color: #28104e;
+  /* font-size: 20px; */
+  padding: 3px;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+}
 
