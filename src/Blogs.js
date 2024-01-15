@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 
 
 const Blog = () => {
@@ -61,7 +62,7 @@ const Blog = () => {
                             <h3>{post.title}</h3>
                             <br></br>
                             <br></br>
-                            <p className='card-span'><span>read more</span> <span><FaArrowRight style={style} /></span></p>
+                            <p className='card-span'><span>read more</span> <span><MdArrowOutward style={style} /></span></p>
                         </div>
                     </a>
                 </div>
