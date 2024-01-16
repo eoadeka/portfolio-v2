@@ -29,6 +29,7 @@ const Blog = () => {
 
     useEffect(() => {
         fetchPosts();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []); //we are maintaining side effects here. since we are making an API call in react
 
 
