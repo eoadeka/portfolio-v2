@@ -1,27 +1,88 @@
-/* .App {
-  text-align: center;
-} */
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  header {
+    visibility: hidden;
+  }
+
+  .section {
+    height: auto !important;
+  }
+
+  .bottom-of-the-barrel{
+    visibility: hidden;
+  }
+
+  .main-section{
+    width: 100vw !important;
+    padding: 2em;
+  }
+
+  h1{
+    font-size: 3em !important;
+  }
+
+  h2{
+    font-size: 2em !important;
+  }
+
+  .section p{
+    width: 100% !important;
+  }
+
+  .coming-soon-overlay{
+    width: 85% !important;
+  }
+
+  .contents{
+    display: inline-block !important;
+  }
+
+  .project-img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .liveDemo-img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay-content{
+    width: 85% !important;
+    height: 98% !important;
+    /* margin-top: 1.5em !important; */
+    /* background-color: #28104e; */
+  }
+
+  .cancel{
+    top: .5em !important;
+    right: .1em !important;
+    z-index: 2;
+  }
+
+  .skill {
+    padding: .3em !important;
+  }
+
+  .skill-div{
+    margin-right: 0 !important;
+  }
+
+  .card{
+    margin-right: 0 !important;
+  }
+
+  .sup-coming-soon{
+    font-size: 10px !important;
+    padding: 3px !important;
+  }
+
+  .contact-link{
+    font-size: 14px !important;
+  }
 }
 
 .App-link {
@@ -72,7 +133,6 @@ a:hover{
   height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
 .main-section{

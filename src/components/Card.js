@@ -41,10 +41,10 @@ const Card = (props) => {
                   </span>
                   {open && item===selected && (
                     <Modal in={!open}>
-                        <MdOutlineCancel size="2em" onClick={handleClick} style={{position: "absolute", top: "2em", right: "2em"}} />
+                        <MdOutlineCancel className='cancel' size="2em" onClick={handleClick} style={{position: "absolute", top: "2em", right: "2em"}} />
                         <div key={project.id}  className='overlay-content'>
                             {/* MAKE THIS OVERLAY DISAPPEAR!!! */}
-                            <h2 style={{textAlign: "center"}}>{project.title}{project.comingSoon === true && <sup style={{fontSize: "15px", background: "#28104e",color: "lavender", borderRadius: "10px", padding:"5px"}}>coming soon</sup>}</h2>
+                            <h2 style={{textAlign: "center"}}>{project.title}{project.comingSoon === true && <sup className='sup-coming-soon' style={{fontSize: "15px", background: "#28104e",color: "lavender", borderRadius: "10px", padding:"5px"}}>coming soon</sup>}</h2>
 
                             <div className='contents'>
                                 <div className='project project-picture'>
@@ -70,7 +70,7 @@ const Card = (props) => {
                                 <div className='project project-live-demo'>
                                     {/* <p>Live demo</p> */}
                                     <picture>
-                                        <img src={project.liveDemo} alt={project.title} width="685px" height="430px" style={{filter:"grayscale(0%)"}}></img>
+                                        <img className='liveDemo-img' src={project.liveDemo} alt={project.title} width="685px" height="430px" style={{filter:"grayscale(0%)"}}></img>
                                     </picture>
                                 </div>
 

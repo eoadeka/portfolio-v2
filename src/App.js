@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import HasnodeArticles from './Blogs';
+import Card from './components/Card';
+import data from './projectsData'
+import HasnodeArticles from './components/Articles';
 import { FaMailBulk, FaGithub, FaPython, FaLinkedin, FaPhp , FaAws, FaDocker, FaJenkins, FaGit  } from 'react-icons/fa';
 import { SiGnubash, SiKubernetes, SiGithubactions, SiTerraform, SiAnsible,SiChef, SiPrometheus, SiGrafana } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCubesStacked, FaHashnode, FaTwitter } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
-import Card from './components/Card';
-import data from './projectsData'
 // import Blogs from './Blogs';
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
           <br></br>I bring a unique blend of technical expertise, creativity, and a dash of humor to the world of DevOps.</p>
           <br></br>
           <a href='https://drive.google.com/file/d/1KN781KQF67WlG3q6cktjUNlMQUuZ_iYn/view?usp=sharing' target="_blank" rel="noreferrer"><button type='link' className='filters-btn resume'>Resume</button></a>
-          <h1 className='bottom-of-the-barrel'>./intro</h1>
+          <h1 className='bottom-of-the-barrel'>./intro<span style={{fontSize: "0.2em"}}>.sh</span></h1>
         </div>
 
         <div id='about' className='section'>
@@ -59,7 +59,7 @@ function App() {
           <br></br>
           <br></br>When I'm not untangling the mysteries of code or fine-tuning deployment pipelines, you can find me sipping on a cup of coffee, contemplating the next algorithmic conquest, or maybe even trying my hand at a new tech stack just for the thrill of it.</p>
 
-          <h1 className='bottom-of-the-barrel'>./about</h1>
+          <h1 className='bottom-of-the-barrel'>./about<span style={{fontSize: "0.2em"}}>.sh</span></h1>
           {/* <h1 className='bottom-of-the-barrel'>¡about</h1> */}
         </div>
 
@@ -118,7 +118,7 @@ function App() {
             </ul>
           </div>
 
-          <h1 className='bottom-of-the-barrel'>./skills</h1>
+          <h1 className='bottom-of-the-barrel'>./skills<span style={{fontSize: "0.2em"}}>.sh</span></h1>
         </div>
 
         <div id='projects' className='section'>
@@ -134,18 +134,10 @@ function App() {
             <button className='filters-btn'>kubernetes</button>
             <button className='filters-btn'>ansible</button>
           </div> */}
-          {/* <div id='overlay'></div> */}
-          {/* <button onClick={() => setOpen(!open)}>Menu</button>
-            {open && (
-              <Modal in={!open}>
-                <p onClick={() => setOpen(!open)}>MAKE THIS OVERLAY DISAPPEAR!!!</p>
-              </Modal>
-            )} */}
           <div className='cards'>
             <Card data={data}  />
-            
           </div>
-          <h1 className='bottom-of-the-barrel'>./projects</h1>
+          <h1 className='bottom-of-the-barrel'>./projects<span style={{fontSize: "0.2em"}}>.sh</span></h1>
         </div>
 
         <div id='blogs' className='section'>
@@ -155,18 +147,17 @@ function App() {
           <br></br>
           <h3>Here are a few of my most recent articles:</h3>
           <HasnodeArticles />
-
-          <h1 className='bottom-of-the-barrel'>./articles</h1>
+          <h1 className='bottom-of-the-barrel'>./articles<span style={{fontSize: "0.2em"}}>.sh</span></h1>
         </div>
 
         <div id='contact' className='section'>
           <h1>get in contact</h1>
-          <p className='contact-list skill'><span><FaMailBulk style={style} /></span> <span> <a href='mailto:eoadeka@gmail.com' target="_blank" rel="noreferrer">eoadeka@gmail.com <MdArrowOutward  /></a></span></p>
-          <p className='contact-list skill'><span><FaGithub style={style} /></span> <span> <a href='https://github.com/ella-adeka/' target="_blank" rel="noreferrer">github.com/ella-adeka <MdArrowOutward  /></a></span></p>
-          <p className='contact-list skill'><span><FaHashnode style={style} /> </span> <span> <a href='https://hashnode.com/@ellaadeka' target="_blank" rel="noreferrer">hashnode.com@ellaadeka <MdArrowOutward  /></a></span></p>
-          <p className='contact-list skill'><span><FaLinkedin style={style} /></span> <span> <a href='https://www.linkedin.com/in/emmanuella-onyowo-adeka/' target="_blank" rel="noreferrer">Emmanuella Onyowo Adeka <MdArrowOutward  /></a></span></p>
-          <p className='contact-list skill'><span><FaTwitter style={style} /></span> <span><a href='https://twitter.com/a_deque_a' target="_blank" rel="noreferrer">Ella Adeka <MdArrowOutward  /></a></span></p>
-          <h1 className='bottom-of-the-barrel'>./contact</h1>
+          <p className='contact-list skill'><span><FaMailBulk style={style} /></span> <span> <a className='contact-link' href='mailto:eoadeka@gmail.com' target="_blank" rel="noreferrer">eoadeka@gmail.com <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaGithub style={style} /></span> <span> <a className='contact-link' href='https://github.com/ella-adeka/' target="_blank" rel="noreferrer">github.com/ella-adeka <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaHashnode style={style} /> </span> <span> <a className='contact-link' href='https://hashnode.com/@ellaadeka' target="_blank" rel="noreferrer">hashnode.com@ellaadeka <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaLinkedin style={style} /></span> <span> <a className='contact-link' href='https://www.linkedin.com/in/emmanuella-onyowo-adeka/' target="_blank" rel="noreferrer">in/ella-adeka <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaTwitter style={style} /></span> <span><a className='contact-link' href='https://twitter.com/a_deque_a' target="_blank" rel="noreferrer">@a_deque_a <MdArrowOutward  /></a></span></p>
+          <h1 className='bottom-of-the-barrel'>./contact<span style={{fontSize: "0.2em"}}>.sh</span></h1>
         </div>
       </main>
     </div>
