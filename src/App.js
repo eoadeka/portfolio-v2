@@ -123,6 +123,8 @@ function App() {
 
         <div id='projects' className='section'>
           <h1>projects</h1>
+          <br></br>
+          <h3>A few of my projects:</h3>
           {/* <p>filters: </p> */}
           {/* <div className='filters'>
             <button className='filters-btn'>all</button> 
@@ -152,6 +154,8 @@ function App() {
 
         <div id='contact' className='section'>
           <h1>get in contact</h1>
+          <br></br>
+          <h3>If you'd like to work or collaborate with me, find me on:</h3>
           <p className='contact-list skill'><span><FaMailBulk style={style} /></span> <span> <a className='contact-link' href='mailto:eoadeka@gmail.com' target="_blank" rel="noreferrer">eoadeka@gmail.com <MdArrowOutward  /></a></span></p>
           <p className='contact-list skill'><span><FaGithub style={style} /></span> <span> <a className='contact-link' href='https://github.com/ella-adeka/' target="_blank" rel="noreferrer">github.com/ella-adeka <MdArrowOutward  /></a></span></p>
           <p className='contact-list skill'><span><FaHashnode style={style} /> </span> <span> <a className='contact-link' href='https://hashnode.com/@ellaadeka' target="_blank" rel="noreferrer">hashnode.com@ellaadeka <MdArrowOutward  /></a></span></p>
