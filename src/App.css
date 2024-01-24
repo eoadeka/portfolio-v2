@@ -31,7 +31,7 @@
   .section p{
     width: 100% !important;
   }
-
+  /* // eslint-disable-next-line react-hooks/exhaustive-deps */
   .coming-soon-overlay{
     min-width: 85% !important;
     position: absolute !important;
@@ -271,6 +271,17 @@ button {
   margin-right: 2em;
   margin-bottom: 10px;
   margin-top: 1em;
+}
+
+#projects{
+  overflow: hidden;
+  position: relative;
+}
+
+.barrel-projects{
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
 }
 
 .card:hover{

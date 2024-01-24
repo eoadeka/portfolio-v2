@@ -139,7 +139,7 @@ function App() {
           <div className='cards'>
             <Card data={data}  />
           </div>
-          <h1 className='bottom-of-the-barrel'>./projects<span style={{fontSize: "0.2em"}}>.sh</span></h1>
+          <h1 className='bottom-of-the-barrel barrel-projects'>./projects<span style={{fontSize: "0.2em"}}>.sh</span></h1>
         </div>
 
         <div id='blogs' className='section'>
@@ -158,9 +158,9 @@ function App() {
           <h3>If you'd like to work or collaborate with me, find me on:</h3>
           <p className='contact-list skill'><span><FaMailBulk style={style} /></span> <span> <a className='contact-link' href='mailto:eoadeka@gmail.com' target="_blank" rel="noreferrer">eoadeka@gmail.com <MdArrowOutward  /></a></span></p>
           <p className='contact-list skill'><span><FaGithub style={style} /></span> <span> <a className='contact-link' href='https://github.com/ella-adeka/' target="_blank" rel="noreferrer">github.com/ella-adeka <MdArrowOutward  /></a></span></p>
-          <p className='contact-list skill'><span><FaHashnode style={style} /> </span> <span> <a className='contact-link' href='https://hashnode.com/@ellaadeka' target="_blank" rel="noreferrer">hashnode.com@ellaadeka <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaHashnode style={style} /> </span> <span> <a className='contact-link' href='https://hashnode.com/@ellaadeka' target="_blank" rel="noreferrer">hashnode.com/@ellaadeka <MdArrowOutward  /></a></span></p>
           <p className='contact-list skill'><span><FaLinkedin style={style} /></span> <span> <a className='contact-link' href='https://www.linkedin.com/in/emmanuella-onyowo-adeka/' target="_blank" rel="noreferrer">in/ella-adeka <MdArrowOutward  /></a></span></p>
-          <p className='contact-list skill'><span><FaTwitter style={style} /></span> <span><a className='contact-link' href='https://twitter.com/a_deque_a' target="_blank" rel="noreferrer">@a_deque_a <MdArrowOutward  /></a></span></p>
+          <p className='contact-list skill'><span><FaTwitter style={style} /></span> <span><a className='contact-link' href='https://twitter.com/a_deque_a' target="_blank" rel="noreferrer">twitter.com/a_deque_a <MdArrowOutward  /></a></span></p>
           <h1 className='bottom-of-the-barrel'>./contact<span style={{fontSize: "0.2em"}}>.sh</span></h1>
         </div>
       </main>
