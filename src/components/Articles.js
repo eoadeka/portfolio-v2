@@ -7,7 +7,7 @@ const Blog = () => {
     const [posts, setPosts] = useState([]);
     const style = { fontSize: "1em", verticalAlign: "middle" };
 
-    // const Secret_KEY = process.env.DEV_KEY
+    const Secret_KEY = `process.env.DEV_KEY`
 
     const query = `
         query {
@@ -26,20 +26,23 @@ const Blog = () => {
         }
         `; //as used in the playground
 
-
     useEffect(() => {
         fetchPosts();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []); //we are maintaining side effects here. since we are making an API call in react
-
-
+    
+    
     const fetchPosts = async () => {
 
-        const response = await fetch("https://api.hashnode.com", {
+        const response = await fetch("https://api.hashnode.com/", {
           method: "POST",
           headers: {
-            "Content-type": "application/json",
-            // "Authorization": "Bearer ${Secret_KEY}", //if you're using token
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin' : '*',
+            // "Access-Control-Allow-Headers": "*",
+            // "Access-Control-Allow-Origin": "*",
+            // "Access-Control-Allow-Methods": "*" ,
+            "Authorization": `Bearer ${Secret_KEY}`, //if you're using token
           },
           body: JSON.stringify({ query }),
         });
@@ -47,7 +50,7 @@ const Blog = () => {
         const data = await response.json();
         // console.log(data);
         setPosts(data.data.user.publication.posts);
-        // console.log(data.data.user.publication.posts);
+        console.log(data.data.user.publication.posts);
     };
 
     return (
