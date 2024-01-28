@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './components/Card';
-import data from './projectsData'
+import data from './data/projectsData'
 import HasnodeArticles from './components/Articles';
 import { FaMailBulk, FaGithub, FaPython, FaLinkedin, FaPhp , FaAws, FaDocker, FaJenkins, FaGit  } from 'react-icons/fa';
 import { SiGnubash, SiKubernetes, SiGithubactions, SiTerraform, SiAnsible,SiChef, SiPrometheus, SiGrafana } from "react-icons/si";
