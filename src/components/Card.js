@@ -63,9 +63,9 @@ const Card = (props) => {
                                 <div className='project project-links'>
                                     {/* <p>Links</p> */}
                                     <h4>{project.description}.</h4>
-                                    <a href={project.blogLink} target="_blank" rel="noreferrer"><MdArrowOutward style={style} /> read my blog on the project</a><br></br>
-                                    <a href={project.githubLink} target="_blank" rel="noreferrer"><MdArrowOutward style={style} /> view code on github</a><br></br>
-                                    <a href={project.liveSite} target="_blank" rel="noreferrer"><MdArrowOutward style={style} /> view live site</a>
+                                    <a href={project.blogLink} target="_blank" rel="noreferrer" style={{ visibility: project.blogLink ? 'visible' : 'hidden' }}><MdArrowOutward style={style} /> read my blog on the project</a><br></br>
+                                    <a href={project.githubLink} target="_blank" rel="noreferrer" style={{ visibility: project.githubLink ? 'visible' : 'hidden' }}><MdArrowOutward style={style} /> view code on github</a><br></br>
+                                    <a href={project.liveSite} target="_blank" rel="noreferrer" style={{ visibility: project.liveSite ? 'visible' : 'hidden' }}><MdArrowOutward style={style} /> view live site</a>
                                 </div>
                                 <div className='project project-live-demo'>
                                     {/* <p>Live demo</p> */}
