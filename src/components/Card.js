@@ -33,9 +33,9 @@ const Card = (props) => {
                       <div className='card-content'>
                           <h3>{project.title}</h3>
                           <p>{project.description}</p>
-                          <p>{project.tools.slice(0,3).map((tool) => (
+                          <small>{project.tools.slice(0,3).map((tool) => (
                             tool
-                          )).join(", ")}</p>
+                          )).join(", ")}</small>
                           <p className='card-span'><span>view</span> <span><MdArrowOutward style={style} /></span></p>
                       </div>
                   </span>
