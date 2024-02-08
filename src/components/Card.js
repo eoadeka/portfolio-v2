@@ -49,7 +49,7 @@ const Card = (props) => {
                             <div className='contents'>
                                 <div className='project project-picture'>
                                     <picture>
-                                        <img className='project-img' src={project.img} alt={project.title} width="450px" height="420px" style={{filter:"grayscale(0%)", objectFit: "fit", objectPosition: "top"}}></img>
+                                        <img className='project-img' src={project.img} alt={project.title} width="420px" height="420px" style={{filter:"grayscale(0%)", objectFit: "fit", objectPosition: "top"}}></img>
                                     </picture>
                                 </div>
                                 <div className='project project-tools'>
@@ -69,9 +69,13 @@ const Card = (props) => {
                                 </div>
                                 <div className='project project-live-demo'>
                                     {/* <p>Live demo</p> */}
-                                    <picture>
+                                    {/* <picture>
                                         <img className='liveDemo-img' src={project.liveDemo} alt={project.title} width="685px" height="430px" style={{filter:"grayscale(0%)"}}></img>
-                                    </picture>
+                                    </picture> */}
+                                    <video  className='liveDemo-img' width="685px" height="430px" autoPlay style={{filter:"grayscale(0%)"}}>
+                                        <source src={project.liveDemo} type="video/mp4"></source>
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
 
                             </div>
