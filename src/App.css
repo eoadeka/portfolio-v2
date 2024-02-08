@@ -57,6 +57,7 @@
   .overlay-content{
     width: 85% !important;
     height: 98% !important;
+    overflow: scroll !important;
     /* margin-top: 1.5em !important; */
     /* background-color: #28104e; */
   }
@@ -360,7 +361,7 @@ img{
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .contents{
