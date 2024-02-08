@@ -1,6 +1,9 @@
-import img1 from "../images/img_1.jpg";
-// import img2 from "../images/img_2.jpg";
-import img3 from "../images/img_3.jpg";
+// import img1 from "../images/img_1.jpg";
+import img1 from "../images/optimised_pipeline.png";
+import vid1 from "../videos/ella-adeka-ci-cd-pipeline-optimisation-clipped.mp4";
+import img2 from "../images/3-tier.png";
+import img3 from "../images/qr_code_gen.png";
+import img4 from "../images/doph.png";
 import cicd from "../images/ci_cd.png";
 
 const data =  
@@ -10,7 +13,7 @@ const data =
         "title": "Optimised CI/CD Pipeline",
         "thumbnail": img1,
         "img": cicd,
-        "liveDemo": img1,
+        "liveDemo": vid1,
         "description": "A CI/CD Pipeline optimised with IaC and automation",
         "tools": [
             "aws",
@@ -33,9 +36,9 @@ const data =
     {
         "id": 2,
         "title": "AWS 3-tier Architecture",
-        "thumbnail": img3,
-        "img": img3,
-        "liveDemo": img3,
+        "thumbnail": img2,
+        "img": img2,
+        "liveDemo": img2,
         "description": "Scalable Three-tier Architecture on AWS",
         "tools": [
             "ec2",
@@ -52,10 +55,33 @@ const data =
     },
     {
         "id": 3,
-        "title": "DOPH",
+        "title": "QR Code Generator",
         "thumbnail": img3,
         "img": img3,
         "liveDemo": img3,
+        "description": "An app that converts a URL to a QR Code",
+        "tools": [
+            "kubernetes",
+            "cloudformation",
+            "docker",
+            "github actions",
+            "prometheus",
+            "grafana",
+            "nextjs",
+            "python",
+        ],
+        "url": "qr-code-generator",
+        "blogLink": null,
+        "githubLink": "https://github.com/ella-adeka/qr-code-generator",
+        "liveSite": null,
+        "comingSoon": false
+    },
+    {
+        "id": 4,
+        "title": "DOPH",
+        "thumbnail": img4,
+        "img": img4,
+        "liveDemo": img4,
         "description": "An open-source DevOps Projects Hub open to all",
         "tools": [
             "git",
@@ -66,28 +92,6 @@ const data =
         "url": "doph",
         "blogLink": null,
         "githubLink": "https://github.com/ella-adeka/DOPH.git",
-        "liveSite": null,
-        "comingSoon": true
-    },
-    {
-        "id": 4,
-        "title": "QR Code Generator",
-        "thumbnail": img3,
-        "img": img3,
-        "liveDemo": img3,
-        "description": "An app that converts a URL to a QR Code",
-        "tools": [
-            "github actions",
-            "docker",
-            "prometheus",
-            "grafana",
-            "cloudformation",
-            "nextjs",
-            "python",
-        ],
-        "url": "qr-code-generator",
-        "blogLink": "https://ellaadeka.hashnode.dev/deploying-a-flask-application-from-github-on-an-ec2-instance",
-        "githubLink": "https://github.com/ella-adeka/qr-code-generator",
         "liveSite": null,
         "comingSoon": true
     },
