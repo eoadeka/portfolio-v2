@@ -2,9 +2,11 @@
 import img1 from "../images/optimised_pipeline.png";
 import vid1 from "../videos/ella-adeka-ci-cd-pipeline-optimisation-clipped.mp4";
 import img2 from "../images/3-tier.png";
+import threeTierArchitecture from "../images/three_tier_architecture.png";
 import img3 from "../images/qr_code_gen.png";
+import vid3 from "../videos/qr_code_gen.mov";
 import img4 from "../images/doph.png";
-import cicd from "../images/ci_cd.png";
+import cicd from "../images/cicd_420x420.png";
 
 const data =  
 [
@@ -37,7 +39,7 @@ const data =
         "id": 2,
         "title": "AWS 3-tier Architecture",
         "thumbnail": img2,
-        "img": img2,
+        "img": threeTierArchitecture,
         "liveDemo": img2,
         "description": "Scalable Three-tier Architecture on AWS",
         "tools": [
@@ -58,7 +60,7 @@ const data =
         "title": "QR Code Generator",
         "thumbnail": img3,
         "img": img3,
-        "liveDemo": img3,
+        "liveDemo": vid3,
         "description": "An app that converts a URL to a QR Code",
         "tools": [
             "kubernetes",
